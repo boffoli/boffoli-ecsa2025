@@ -2,7 +2,6 @@
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/wwwroot/_framework/blazor.webassembly.js
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/wwwroot/_framework/BlazorBEADs.DemoWasm.CAiSE2025.pdb
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/wwwroot/_framework/BlazorBEADs.DemoWasm.CAiSE2025.wasm
-/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/wwwroot/_framework/BlazorBEADs.pdb
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/wwwroot/_framework/BlazorBEADs.wasm
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/wwwroot/_framework/dotnet.js
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/wwwroot/_framework/dotnet.js.map
@@ -265,7 +264,6 @@
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/wwwroot/_framework/System.Data.DataSetExtensions.wasm.gz
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/wwwroot/_framework/System.IO.FileSystem.wasm.gz
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/wwwroot/_framework/dotnet.native.8.0.10.b8iv2tl11c.js.gz
-/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/wwwroot/_framework/BlazorBEADs.pdb.gz
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/wwwroot/_framework/System.IO.Compression.FileSystem.wasm.gz
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/wwwroot/_framework/Microsoft.Extensions.Primitives.wasm.gz
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/wwwroot/_framework/Microsoft.Extensions.FileSystemGlobbing.wasm.gz
@@ -614,7 +612,6 @@
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/icudt_EFIGS.dat
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/icudt_no_CJK.dat
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/BlazorBEADs.dll
-/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/BlazorBEADs.pdb
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/obj/Debug/net8.0/BlazorBEADs.DemoWasm.CAiSE2025.csproj.AssemblyReference.cache
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/obj/Debug/net8.0/BlazorBEADs.DemoWasm.CAiSE2025.GeneratedMSBuildEditorConfig.editorconfig
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/obj/Debug/net8.0/BlazorBEADs.DemoWasm.CAiSE2025.AssemblyInfoInputs.cache
@@ -1030,7 +1027,6 @@
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/obj/Debug/net8.0/compressed/pvtbthok2t.gz
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/obj/Debug/net8.0/compressed/b1t9s1bfek.gz
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/obj/Debug/net8.0/compressed/2pdevflf79.gz
-/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/obj/Debug/net8.0/compressed/bphbo2bjnm.gz
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/obj/Debug/net8.0/compressed/qfpkowvd6x.gz
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/obj/Debug/net8.0/compressed/0fnql9p38n.gz
 /Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/obj/Debug/net8.0/compressed/zut9de47ww.gz

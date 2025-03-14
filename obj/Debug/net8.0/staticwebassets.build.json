@@ -1,23 +1,11 @@
 {
   "Version": 1,
-  "Hash": "jDwRrYezECAAtN+dgp91R/KhSPO7gp311f4ehSw5o64=",
+  "Hash": "dSOplwJd0iGOL0zBNKQchuMVbhcksMyZTxOBb+Ft5M0=",
   "Source": "BlazorBEADs.DemoWasm.CAiSE2025",
   "BasePath": "/",
   "Mode": "Root",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [
-    {
-      "Identity": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs/src/BlazorBEADs/BlazorBEADs.csproj",
-      "Version": 2,
-      "Source": "BlazorBEADs",
-      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "",
-      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
-      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "",
-      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
-    }
-  ],
+  "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
       "Name": "BlazorBEADs.DemoWasm.CAiSE2025/wwwroot",
@@ -103,25 +91,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/obj/Debug/net8.0/webcil/BlazorBEADs.DemoWasm.CAiSE2025.wasm"
-    },
-    {
-      "Identity": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/wwwroot/_framework/BlazorBEADs.pdb",
-      "SourceId": "BlazorBEADs.DemoWasm.CAiSE2025",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/BlazorBEADs.pdb",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "WasmResource",
-      "AssetTraitValue": "symbol",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs/src/BlazorBEADs/bin/Debug/net8.0/BlazorBEADs.pdb"
     },
     {
       "Identity": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/wwwroot/_framework/BlazorBEADs.wasm",
@@ -5100,25 +5069,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/wwwroot/_framework/dotnet.native.8.0.10.b8iv2tl11c.js"
-    },
-    {
-      "Identity": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/obj/Debug/net8.0/compressed/bphbo2bjnm.gz",
-      "SourceId": "BlazorBEADs.DemoWasm.CAiSE2025",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/BlazorBEADs.pdb.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/wwwroot/_framework/BlazorBEADs.pdb",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/wwwroot/_framework/BlazorBEADs.pdb"
     },
     {
       "Identity": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/obj/Debug/net8.0/compressed/br6y1blu12.gz",

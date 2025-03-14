@@ -2,6 +2,25 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "BlazorBEADs/2.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "8.0.4",
+          "Microsoft.AspNetCore.Components.Web": "8.0.4",
+          "Microsoft.AspNetCore.Components.WebAssembly": "8.0.4",
+          "Microsoft.JSInterop": "8.0.4"
+        },
+        "compile": {
+          "lib/net8.0/BlazorBEADs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/BlazorBEADs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.11": {
         "type": "package",
         "dependencies": {
@@ -448,26 +467,29 @@
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
-        }
-      },
-      "BlazorBEADs/2.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Microsoft.AspNetCore.Components": "8.0.4",
-          "Microsoft.AspNetCore.Components.Web": "8.0.4",
-          "Microsoft.AspNetCore.Components.WebAssembly": "8.0.4",
-          "Microsoft.JSInterop": "8.0.4"
-        },
-        "compile": {
-          "bin/placeholder/BlazorBEADs.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BlazorBEADs.dll": {}
         }
       }
     },
     "net8.0/browser-wasm": {
+      "BlazorBEADs/2.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "8.0.4",
+          "Microsoft.AspNetCore.Components.Web": "8.0.4",
+          "Microsoft.AspNetCore.Components.WebAssembly": "8.0.4",
+          "Microsoft.JSInterop": "8.0.4"
+        },
+        "compile": {
+          "lib/net8.0/BlazorBEADs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/BlazorBEADs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.11": {
         "type": "package",
         "dependencies": {
@@ -914,27 +936,26 @@
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
-        }
-      },
-      "BlazorBEADs/2.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Microsoft.AspNetCore.Components": "8.0.4",
-          "Microsoft.AspNetCore.Components.Web": "8.0.4",
-          "Microsoft.AspNetCore.Components.WebAssembly": "8.0.4",
-          "Microsoft.JSInterop": "8.0.4"
-        },
-        "compile": {
-          "bin/placeholder/BlazorBEADs.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BlazorBEADs.dll": {}
         }
       }
     }
   },
   "libraries": {
+    "BlazorBEADs/2.0.1": {
+      "sha512": "XlFWoSXaYIvTWFpVdg0s84OE0GzTv0wR5rUv1Ypuq30PFnHqArhS+S0r/LWmUP+kac/MRxo6YzSr3sxzFYeQvw==",
+      "type": "package",
+      "path": "blazorbeads/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "blazorbeads.2.0.1.nupkg.sha512",
+        "blazorbeads.nuspec",
+        "lib/net8.0/BlazorBEADs.dll",
+        "lib/net8.0/BlazorBEADs.xml",
+        "lib/net8.0/BlazorBEAST.xml",
+        "readme.md"
+      ]
+    },
     "Microsoft.AspNetCore.Authorization/8.0.11": {
       "sha512": "ACaLyjBSz9WUzbaJe0Sv09/FihRNHYlRUIj3uQ8CZFFByf6Qwv3+PXnbltidFKz2iOyqdvppQias3emdQUY2nA==",
       "type": "package",
@@ -1894,16 +1915,11 @@
         "system.io.pipelines.nuspec",
         "useSharedDesignerContext.txt"
       ]
-    },
-    "BlazorBEADs/2.0.0": {
-      "type": "project",
-      "path": "../BlazorBEADs/src/BlazorBEADs/BlazorBEADs.csproj",
-      "msbuildProject": "../BlazorBEADs/src/BlazorBEADs/BlazorBEADs.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "BlazorBEADs >= 2.0.0",
+      "BlazorBeads >= 2.0.1",
       "Microsoft.AspNetCore.Components.WebAssembly >= 8.0.11",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 8.0.11",
       "Microsoft.NET.ILLink.Tasks >= 8.0.10",
@@ -1935,11 +1951,7 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {
-            "/Users/michelemezzina/Documents/GitHub/BlazorBEADs/src/BlazorBEADs/BlazorBEADs.csproj": {
-              "projectPath": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs/src/BlazorBEADs/BlazorBEADs.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -1957,6 +1969,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "BlazorBeads": {
+            "target": "Package",
+            "version": "[2.0.1, )"
+          },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",
             "version": "[8.0.11, )"
