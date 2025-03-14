@@ -1,11 +1,30 @@
 {
     "version": "0.2.0",
     "configurations": [
+        // CONFIGURATION FOR BLAZOR WEBASSEMBLY
         {
-            "name": "Launch and Debug Standalone Blazor WebAssembly App",
+            "name": "Launch and Debug Blazor WebAssembly App",
             "type": "blazorwasm",
             "request": "launch",
-            "cwd": "${workspaceFolder}"
+        
+            // Optional task to run before debugging
+            "preLaunchTask": "build-wasm", 
+        
+            // The URL where the app is listening
+            "url": "http://localhost:5290",
+        
+            // Browser to use (chrome/edge)
+            "browser": "chrome",
+        
+            // The root folder of your WASM project
+            "webRoot": "${workspaceFolder}",
+        
+            // Instructs VS Code to "work" inside the WASM project folder
+            "cwd": "${workspaceFolder}",
+                
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
         }
     ]
 }

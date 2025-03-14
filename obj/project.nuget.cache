@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jSl/Ctxzqnk=",
+  "dgSpecHash": "Z6YJzZ7MslQ=",
   "success": true,
-  "projectFilePath": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs/samples/BlazorBEADs.DemoWasm/BlazorBEADs.DemoWasm.csproj",
+  "projectFilePath": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/BlazorBEADs.DemoWasm.CAiSE2025.csproj",
   "expectedPackageFiles": [
     "/Users/michelemezzina/.nuget/packages/microsoft.aspnetcore.authorization/8.0.11/microsoft.aspnetcore.authorization.8.0.11.nupkg.sha512",
     "/Users/michelemezzina/.nuget/packages/microsoft.aspnetcore.components/8.0.11/microsoft.aspnetcore.components.8.0.11.nupkg.sha512",

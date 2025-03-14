@@ -1897,8 +1897,8 @@
     },
     "BlazorBEADs/2.0.0": {
       "type": "project",
-      "path": "../../src/BlazorBEADs/BlazorBEADs.csproj",
-      "msbuildProject": "../../src/BlazorBEADs/BlazorBEADs.csproj"
+      "path": "../BlazorBEADs/src/BlazorBEADs/BlazorBEADs.csproj",
+      "msbuildProject": "../BlazorBEADs/src/BlazorBEADs/BlazorBEADs.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1916,11 +1916,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs/samples/BlazorBEADs.DemoWasm/BlazorBEADs.DemoWasm.csproj",
-      "projectName": "BlazorBEADs.DemoWasm",
-      "projectPath": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs/samples/BlazorBEADs.DemoWasm/BlazorBEADs.DemoWasm.csproj",
+      "projectUniqueName": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/BlazorBEADs.DemoWasm.CAiSE2025.csproj",
+      "projectName": "BlazorBEADs.DemoWasm.CAiSE2025",
+      "projectPath": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/BlazorBEADs.DemoWasm.CAiSE2025.csproj",
       "packagesPath": "/Users/michelemezzina/.nuget/packages/",
-      "outputPath": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs/samples/BlazorBEADs.DemoWasm/obj/",
+      "outputPath": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/michelemezzina/.nuget/NuGet/NuGet.Config"

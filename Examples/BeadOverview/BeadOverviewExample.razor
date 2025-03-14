@@ -1,0 +1,166 @@
+@page "/bead-overview-example"
+@namespace BlazorBEADs.DemoWasm.CAiSE2025.Examples.BeadOverview
+@using BlazorBEADs.Interfaces.BEADs
+@using BlazorBEADs.Factories
+@using BlazorBEADs.Utilities
+@using BlazorBEADs.DemoWasm.CAiSE2025.Examples.Models
+
+<div class="container">
+    <!-- Page Title -->
+    <h4 class="section-title">BEAD Overview Example</h4>
+    <div class="subsection-title">3.2 Definition and Configuration of BEAD Components</div>
+    <div class="subsection-title">3.3 Integration into Razor Pages</div>
+
+    <hr />
+
+    <div class="row">
+        <!-- Left Section: BEAD Rendering -->
+        <div class="col-md-5 bead-section">
+            <h5 class="section-header">Rendered BEAD Components</h5>
+
+            <!-- Rendering the Input BEAD component for the username field -->
+            <div class="bead-item">
+                <h6>1. Input BEAD (Username)</h6>
+                @inputBead.Render(this)
+            </div>
+            <hr />
+
+            <!-- Rendering the Checkbox BEAD for accepting terms -->
+            <div class="bead-item">
+                <h6>2. Checkbox BEAD (Accept Terms)</h6>
+                @checkboxBead.Render(this)
+            </div>
+            <hr />
+
+            <!-- Rendering the Select BEAD for choosing a country -->
+            <div class="bead-item">
+                <h6>3. Select BEAD (Country)</h6>
+                @selectBead.Render(this)
+            </div>
+            <hr />
+
+            <!-- Rendering the Grouped Radio BEAD for selecting a preferred framework -->
+            <div class="bead-item">
+                <h6>4. Grouped Radio BEAD (Preferred Framework)</h6>
+                @radioBead.Render(this)
+            </div>
+            <hr />
+        </div>
+
+        <!-- Right Section: Model Preview -->
+        <div class="col-md-5 model-section">
+            <h5 class="section-header">Model Data (Bound Values)</h5>
+            <p>These are the current values bound to the BEAD components.</p>
+
+            <!-- Displaying the current values bound to the BEAD components -->
+            <ul class="model-values">
+                <li><strong>Username:</strong> @Model.UserName</li>
+                <li><strong>Accepted Terms:</strong> @(Model.AcceptedTerms ? "Yes" : "No")</li>
+                <li><strong>Country:</strong> @Model.Country</li>
+                <li><strong>Preferred Framework:</strong> @Model.SelectedFramework</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+@code {
+    // Model containing all bound fields
+    private UserRegistrationModel Model { get; set; } = new();
+
+    // BEAD components for form fields
+    private IRenderable inputBead = default!;
+    private IRenderable checkboxBead = default!;
+    private IRenderable selectBead = default!;
+    private IRenderable radioBead = default!;
+
+    protected override void OnInitialized()
+    {
+        // Creating the Input BEAD for Username input field
+        inputBead = BeadBuilderFactory.CreateInputBeadBuilder("usernameInput")
+            // Setting the label displayed above the input field
+            .WithLabel("Username")
+            // Binding the input field to the UserName property in the model
+            .WithBindToProperty(() => Model.UserName)
+            // Marking the field as required and setting a placeholder text
+            .Properties.WithRequired(true)
+            .Properties.WithPlaceholder("Enter your username")
+            // Applying a CSS class for styling purposes
+            .Properties.WithClass("form-control")
+            // Adding an event handler that logs a message when the input field loses focus
+            .Events.WithOnBlur(async () =>
+            {
+                await Task.Yield();
+                Console.WriteLine("Username updated: " + Model.UserName);
+                StateHasChanged();
+            })
+            // Defining a validation rule to ensure a minimum length requirement
+            .WithValidationFunc(() => Model.ValidateUserName(), "",
+                "Username must be at least 5 characters long.")
+            .Build();
+
+            // Creating the Checkbox BEAD for Accept Terms selection
+        checkboxBead = BeadBuilderFactory.CreateCheckboxBeadBuilder("acceptTerms")
+            // Setting the label displayed next to the checkbox
+            .WithLabel("I Accept the Terms and Conditions")
+            // Binding the checkbox to the AcceptedTerms property in the model
+            .WithBindToProperty(() => Model.AcceptedTerms)
+            // Applying a CSS class for styling
+            .Properties.WithClass("form-check-input")
+            // Adding an event handler that logs a message when the checkbox state changes
+            .Events.WithOnChange(async () =>
+            {
+                await Task.Yield();
+                Console.WriteLine(Model.AcceptedTerms ? "Terms accepted." : "Terms not accepted.");
+                StateHasChanged();
+            })
+            .Build();
+
+        // Creating the Select BEAD for choosing a Country
+        selectBead = BeadBuilderFactory.CreateSelectBeadBuilder("country")
+            // Setting the label displayed above the dropdown menu
+            .WithLabel("Country")
+            // Defining available options for country selection
+            .WithOptions(new List<Option>
+            {
+                new("United States", "US"),
+                new("Italy", "IT"),
+                new("United Kingdom", "UK")
+            })
+            // Binding the select input to the Country property in the model
+            .WithBindToProperty(() => Model.Country)
+            // Applying a CSS class for styling
+            .Properties.WithClass("form-control")
+            // Adding an event handler that logs a message when the selection changes
+            .Events.WithOnChange(async () =>
+            {
+                await Task.Yield();
+                Console.WriteLine("Country selected: " + Model.Country);
+                StateHasChanged();
+            })
+            .Build();
+
+        // Creating the Grouped Radio BEAD for selecting a Preferred Framework
+        radioBead = BeadBuilderFactory.CreateGroupedRadioBeadBuilder("frameworkGroup")
+            // Setting the label displayed above the radio button group
+            .WithLabel("Preferred Framework")
+            // Defining available options for framework selection
+            .WithOptions(new List<Option>
+            {
+                new("Blazor", "Blazor"),
+                new("Angular", "Angular"),
+                new("React", "React")
+            })
+            // Binding the radio button selection to the SelectedFramework property in the model
+            .WithBindToProperty(() => Model.SelectedFramework)
+            // Applying a CSS class for styling
+            .Properties.WithClass("form-check-input")
+            // Adding an event handler that logs a message when a different option is selected
+            .Events.WithOnChange(async () =>
+            {
+                await Task.Yield();
+                Console.WriteLine("Framework selected: " + Model.SelectedFramework);
+                StateHasChanged();
+            })
+            .Build();
+    }
+}

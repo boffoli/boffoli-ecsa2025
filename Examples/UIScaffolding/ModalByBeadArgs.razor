@@ -1,0 +1,81 @@
+@namespace BlazorBEADs.DemoWasm.CAiSE2025.Examples.UIScaffolding
+@using BlazorBEADs.Interfaces.BEADs
+
+<!-- Modal component dynamically controlled via Blazor -->
+<div class="modal" tabindex="-1" style="display:@(IsVisible ? "block" : "none")">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h5 class="modal-title">User Registration</h5>
+                <button type="button" class="btn-close" @onclick="Close"></button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <form>
+                    <!-- Dynamically rendering form elements passed as parameters -->
+                    @foreach (var element in Elements)
+                    {
+                        @element.Render(this) <!-- Rendering each BEAD component dynamically -->
+                    }
+                </form>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <!-- Submit button triggers the form submission -->
+                <button type="button" class="btn btn-primary" @onclick="OnSubmitAsync">Register</button>
+                
+                <!-- Close button triggers modal closure -->
+                <button type="button" class="btn btn-secondary" @onclick="Close">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@code {
+    /// <summary>
+    /// List of dynamic form elements to be rendered inside the modal.
+    /// These elements are passed as a parameter and rendered inside the modal body.
+    /// </summary>
+    [Parameter] public List<IRenderable> Elements { get; set; } = new();
+
+    /// <summary>
+    /// Event callback triggered when the modal is closed.
+    /// External components can listen to this event.
+    /// </summary>
+    [Parameter] public EventCallback OnClose { get; set; }
+
+    /// <summary>
+    /// Controls whether the modal is currently visible.
+    /// </summary>
+    protected bool IsVisible { get; private set; } = false;
+
+    /// <summary>
+    /// Opens the modal, making it visible.
+    /// </summary>
+    public void Open()
+    {
+        IsVisible = true;
+    }
+
+    /// <summary>
+    /// Closes the modal and triggers the OnClose callback.
+    /// </summary>
+    public async Task Close()
+    {
+        IsVisible = false;
+        await OnClose.InvokeAsync();
+    }
+
+    /// <summary>
+    /// Handles the form submission logic and closes the modal.
+    /// </summary>
+    protected async Task OnSubmitAsync()
+    {
+        await Close();
+    }
+}

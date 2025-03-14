@@ -1,60 +1,64 @@
 {
   "Files": [
     {
-      "Id": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs/samples/BlazorBEADs.DemoWasm/bin/Debug/net8.0/wwwroot/_framework/blazor.webassembly.js",
+      "Id": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/bin/Debug/net8.0/wwwroot/_framework/blazor.webassembly.js",
       "PackagePath": "staticwebassets/_framework/blazor.webassembly.js"
     },
     {
-      "Id": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs/samples/BlazorBEADs.DemoWasm/obj/Debug/net8.0/compressed/cbvga4dsnn.gz",
+      "Id": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/obj/Debug/net8.0/compressed/cbvga4dsnn.gz",
       "PackagePath": "staticwebassets/_framework/blazor.webassembly.js.gz"
     },
     {
-      "Id": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs/samples/BlazorBEADs.DemoWasm/obj/Debug/net8.0/scopedcss/bundle/BlazorBEADs.DemoWasm.styles.css",
-      "PackagePath": "staticwebassets/BlazorBEADs.DemoWasm.styles.css"
+      "Id": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/obj/Debug/net8.0/scopedcss/bundle/BlazorBEADs.DemoWasm.CAiSE2025.styles.css",
+      "PackagePath": "staticwebassets/BlazorBEADs.DemoWasm.CAiSE2025.styles.css"
     },
     {
-      "Id": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs/samples/BlazorBEADs.DemoWasm/wwwroot/css/app.css",
+      "Id": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/wwwroot/css/app.css",
       "PackagePath": "staticwebassets/css/app.css"
     },
     {
-      "Id": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs/samples/BlazorBEADs.DemoWasm/wwwroot/css/bootstrap/bootstrap.min.css",
+      "Id": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/wwwroot/css/bootstrap/bootstrap.min.css",
       "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
     },
     {
-      "Id": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs/samples/BlazorBEADs.DemoWasm/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "Id": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/wwwroot/css/bootstrap/bootstrap.min.css.map",
       "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Id": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs/samples/BlazorBEADs.DemoWasm/wwwroot/favicon.png",
+      "Id": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/wwwroot/favicon.png",
       "PackagePath": "staticwebassets/favicon.png"
     },
     {
-      "Id": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs/samples/BlazorBEADs.DemoWasm/wwwroot/icon-192.png",
+      "Id": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/wwwroot/icon-192.png",
       "PackagePath": "staticwebassets/icon-192.png"
     },
     {
-      "Id": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs/samples/BlazorBEADs.DemoWasm/wwwroot/index.html",
+      "Id": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/wwwroot/index.html",
       "PackagePath": "staticwebassets/index.html"
     },
     {
-      "Id": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs/samples/BlazorBEADs.DemoWasm/wwwroot/sample-data/weather.json",
+      "Id": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/wwwroot/sample-data/weather.json",
       "PackagePath": "staticwebassets/sample-data/weather.json"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.BlazorBEADs.DemoWasm.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.BlazorBEADs.DemoWasm.CAiSE2025.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.BlazorBEADs.DemoWasm.props",
-      "PackagePath": "build\\BlazorBEADs.DemoWasm.props"
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.BlazorBEADs.DemoWasm.CAiSE2025.props",
+      "PackagePath": "build\\BlazorBEADs.DemoWasm.CAiSE2025.props"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.BlazorBEADs.DemoWasm.props",
-      "PackagePath": "buildMultiTargeting\\BlazorBEADs.DemoWasm.props"
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.BlazorBEADs.DemoWasm.CAiSE2025.props",
+      "PackagePath": "buildMultiTargeting\\BlazorBEADs.DemoWasm.CAiSE2025.props"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.BlazorBEADs.DemoWasm.props",
-      "PackagePath": "buildTransitive\\BlazorBEADs.DemoWasm.props"
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.BlazorBEADs.DemoWasm.CAiSE2025.props",
+      "PackagePath": "buildTransitive\\BlazorBEADs.DemoWasm.CAiSE2025.props"
     }
   ],
   "ElementsToRemove": []

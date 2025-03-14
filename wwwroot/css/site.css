@@ -1,0 +1,68 @@
+/* General Layout */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Page Titles */
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.subsection-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Section Headers */
+.section-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* BEAD Styling */
+.bead-item {
+    margin-bottom: 30px; /* Increased spacing between BEADs */
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.bead-section {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+/* Model Preview Styling */
+.model-section {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.model-values {
+    list-style-type: none;
+    padding: 0;
+}
+
+.model-values li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Vertical Separator */
+.separator {
+    border-left: 4px solid #007bff; /* Blue vertical line */
+    height: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

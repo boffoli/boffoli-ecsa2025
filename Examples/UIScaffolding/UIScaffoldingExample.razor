@@ -1,0 +1,84 @@
+@page "/ui-scaffolding-example"
+@namespace BlazorBEADs.DemoWasm.CAiSE2025.Examples.UIScaffolding
+@using BlazorBEADs.DemoWasm.CAiSE2025.Examples.Models
+@using BlazorBEADs.Interfaces.BEADs
+
+<div class="container">
+    <!-- Page Title -->
+    <h4 class="section-title">UI Scaffolding</h4>
+    <div class="subsection-title">3.5 Advanced UI</div>
+    <hr />
+
+    <!-- Bound Values Display -->
+    <div class="bead-section">
+        <h5 class="section-header">Bound Form Fields</h5>
+        <p>Below are the dynamically generated form fields.</p>
+
+        <ul class="model-values">
+            <li><strong>Username:</strong> @userModel.UserName</li>
+            <li><strong>Country:</strong> @userModel.Country</li>
+            <li><strong>Accepted Terms:</strong> @(userModel.AcceptedTerms ? "Yes" : "No")</li>
+            <li><strong>Preferred Framework:</strong> @userModel.SelectedFramework</li>
+        </ul>
+    </div>
+
+    <!-- Buttons placed below bound fields, aligned to the left -->
+    <div class="d-flex justify-content-start gap-3 mt-3">
+        <button class="btn btn-primary" @onclick="ShowModal">
+            Open Modal
+            <br />(BEAD Parameters)
+        </button>
+    </div>
+
+    <hr />
+
+    <!-- BEAD-Based Modal -->
+    <ModalByBeadArgs @ref="ModalReference" Elements="FormFields" OnClose="RefreshPage" />
+
+</div>
+
+@code {
+    /// <summary>
+    /// User registration model containing form data.
+    /// </summary>
+    private UserRegistrationModel userModel = new()
+        {
+            UserName = "",
+            Country = "",
+            AcceptedTerms = false,
+            SelectedFramework = ""
+        };
+
+    /// <summary>
+    /// List of dynamically generated BEAD form fields.
+    /// </summary>
+    private List<IRenderable> FormFields { get; set; } = [];
+
+    /// <summary>
+    /// Reference to the BEAD-based modal component.
+    /// </summary>
+    private ModalByBeadArgs? ModalReference { get; set; }
+
+    /// <inheritdoc/>
+    protected override void OnInitialized()
+    {
+        // Generating the form fields dynamically
+        FormFields = UserRegistrationModalScaffolder.CreateFormFields(userModel, StateHasChanged);
+    }
+
+    /// <summary>
+    /// Opens the registration modal using BEAD parameters.
+    /// </summary>
+    private void ShowModal()
+    {
+        ModalReference?.Open();
+    }
+
+    /// <summary>
+    /// Triggers a UI update when the modal is closed.
+    /// </summary>
+    private void RefreshPage()
+    {
+        InvokeAsync(StateHasChanged);
+    }
+}
