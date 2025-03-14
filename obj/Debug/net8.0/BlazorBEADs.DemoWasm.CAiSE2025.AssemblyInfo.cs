@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlazorBEADs.DemoWasm.CAiSE2025")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8fa11b906fc67c5147d5296cbc20b223c872a786")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+00fef08a6df8d42147a456d20016c38912c43e0a")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlazorBEADs.DemoWasm.CAiSE2025")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlazorBEADs.DemoWasm.CAiSE2025")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

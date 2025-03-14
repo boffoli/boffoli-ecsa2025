@@ -2,7 +2,6 @@ namespace BlazorBEADs.DemoWasm.CAiSE2025.Examples.UIScaffolding;
 using BlazorBEADs.DemoWasm.CAiSE2025.Examples.Models;
 using BlazorBEADs.Factories;
 using BlazorBEADs.Interfaces.BEADs;
-using BlazorBEADs.Utilities;
 
 /// <summary>
 /// Provides scaffolding functionality to generate user registration form fields dynamically as BEAD components.
