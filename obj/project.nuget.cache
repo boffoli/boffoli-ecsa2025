@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "hVHoXFlH3+w=",
+  "dgSpecHash": "rEEoEJLpeXc=",
   "success": true,
   "projectFilePath": "/Users/nicolaboffoli/Documents/GitHub/BlazorBEADs.DemoWasm/BlazorBEADs.DemoWasm.csproj",
   "expectedPackageFiles": [
-    "/Users/nicolaboffoli/.nuget/packages/blazorbeads/2.0.1/blazorbeads.2.0.1.nupkg.sha512",
+    "/Users/nicolaboffoli/.nuget/packages/blazorbeads/2.0.2/blazorbeads.2.0.2.nupkg.sha512",
     "/Users/nicolaboffoli/.nuget/packages/microsoft.aspnetcore.authorization/8.0.11/microsoft.aspnetcore.authorization.8.0.11.nupkg.sha512",
     "/Users/nicolaboffoli/.nuget/packages/microsoft.aspnetcore.components/8.0.11/microsoft.aspnetcore.components.8.0.11.nupkg.sha512",
     "/Users/nicolaboffoli/.nuget/packages/microsoft.aspnetcore.components.analyzers/8.0.11/microsoft.aspnetcore.components.analyzers.8.0.11.nupkg.sha512",

@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "BlazorBEADs/2.0.1": {
+      "BlazorBEADs/2.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components": "8.0.4",
@@ -471,7 +471,7 @@
       }
     },
     "net8.0/browser-wasm": {
-      "BlazorBEADs/2.0.1": {
+      "BlazorBEADs/2.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components": "8.0.4",
@@ -941,14 +941,14 @@
     }
   },
   "libraries": {
-    "BlazorBEADs/2.0.1": {
-      "sha512": "XlFWoSXaYIvTWFpVdg0s84OE0GzTv0wR5rUv1Ypuq30PFnHqArhS+S0r/LWmUP+kac/MRxo6YzSr3sxzFYeQvw==",
+    "BlazorBEADs/2.0.2": {
+      "sha512": "2CKDEyhG1XGBejJSwyZlf/24EtHEeJKi2Adh+FfIEOqRooeT2df99Djmey3iJNnIOOrHkLVXs1mm/og6I8vXKg==",
       "type": "package",
-      "path": "blazorbeads/2.0.1",
+      "path": "blazorbeads/2.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "blazorbeads.2.0.1.nupkg.sha512",
+        "blazorbeads.2.0.2.nupkg.sha512",
         "blazorbeads.nuspec",
         "lib/net8.0/BlazorBEADs.dll",
         "lib/net8.0/BlazorBEADs.xml",
@@ -1891,7 +1891,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "BlazorBEADs >= 2.0.1",
+      "BlazorBEADs >= 2.0.2",
       "Microsoft.AspNetCore.Components.WebAssembly >= 8.0.11",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 8.0.11",
       "Microsoft.NET.ILLink.Tasks >= 8.0.14",
@@ -1943,7 +1943,7 @@
         "dependencies": {
           "BlazorBEADs": {
             "target": "Package",
-            "version": "[2.0.1, )"
+            "version": "[2.0.2, )"
           },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",
