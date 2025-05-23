@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../buildMultiTargeting/BlazorBEADs.DemoWasm.CAiSE2025.props" />
-</Project>

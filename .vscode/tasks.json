@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/BlazorBEADs.DemoWasm.CAiSE2025.csproj",
+                "${workspaceFolder}/BlazorBEADs.DemoWasm.csproj",
                 "--configuration",
                 "Debug"
             ],

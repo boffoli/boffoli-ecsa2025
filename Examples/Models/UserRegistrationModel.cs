@@ -1,4 +1,4 @@
-namespace BlazorBEADs.DemoWasm.CAiSE2025.Examples.Models
+namespace BlazorBEADs.DemoWasm.Examples.Models
 {
     /// <summary>
     /// Model for user registration.

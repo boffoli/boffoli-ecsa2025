@@ -11,5 +11,4 @@ This package is licensed under the [MIT License](https://opensource.org/licenses
 For questions, support, or commercial extensions:
 - Email: [nicola.boffoli@uniba.it](mailto:nicola.boffoli@uniba.it)
 
-If you need tailored features or wish to use this library in a commercial product, feel free to reach out!
 =======

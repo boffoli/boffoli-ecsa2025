@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/BlazorBEADs.DemoWasm.CAiSE2025.csproj": {}
+    "/Users/nicolaboffoli/Documents/GitHub/BlazorBEADs.DemoWasm/BlazorBEADs.DemoWasm.csproj": {}
   },
   "projects": {
-    "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/BlazorBEADs.DemoWasm.CAiSE2025.csproj": {
+    "/Users/nicolaboffoli/Documents/GitHub/BlazorBEADs.DemoWasm/BlazorBEADs.DemoWasm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/BlazorBEADs.DemoWasm.CAiSE2025.csproj",
-        "projectName": "BlazorBEADs.DemoWasm.CAiSE2025",
-        "projectPath": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/BlazorBEADs.DemoWasm.CAiSE2025.csproj",
-        "packagesPath": "/Users/michelemezzina/.nuget/packages/",
-        "outputPath": "/Users/michelemezzina/Documents/GitHub/BlazorBEADs.DemoWasm.CAiSE2025/obj/",
+        "projectUniqueName": "/Users/nicolaboffoli/Documents/GitHub/BlazorBEADs.DemoWasm/BlazorBEADs.DemoWasm.csproj",
+        "projectName": "BlazorBEADs.DemoWasm",
+        "projectPath": "/Users/nicolaboffoli/Documents/GitHub/BlazorBEADs.DemoWasm/BlazorBEADs.DemoWasm.csproj",
+        "packagesPath": "/Users/nicolaboffoli/.nuget/packages/",
+        "outputPath": "/Users/nicolaboffoli/Documents/GitHub/BlazorBEADs.DemoWasm/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/michelemezzina/.nuget/NuGet/NuGet.Config"
+          "/Users/nicolaboffoli/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.pkg.github.com/boffoli/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -38,12 +37,17 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BlazorBEADs": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[8.0.11, )"
@@ -56,13 +60,13 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.10, )",
+              "version": "[8.0.14, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.10, )",
+              "version": "[9.0.3, )",
               "autoReferenced": true
             }
           },
@@ -77,12 +81,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[8.0.14, 8.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
